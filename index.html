@@ -50,10 +50,11 @@
         
         details { background: #fafafa; border: 1px solid #edece9; border-radius: 6px; padding: 14px; margin: 14px 0; transition: background 0.2s ease; }
         details[open] { background: #ffffff; }
-        summary { font-weight: 600; cursor: pointer; color: #2383e2; outline: none; user-select: none; }
+        summary { font-weight: 600; cursor: pointer; color: #2383e2; outline: none; user-select: none; transition: color 0.2s ease; }
         summary:hover { color: #1b62ab; }
         
-        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 20px; margin-top: 20px; }
+        /* Video Grid Optimized Layout */
+        .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px; }
         .video-card { background: #fafafa; border: 1px solid #edece9; border-radius: 8px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; }
         .video-container { position: relative; width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 6px; overflow: hidden; margin-bottom: 12px; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
@@ -63,6 +64,15 @@
         .inline-script-btn { display: inline-block; background: #ffffff; color: #37352f; border: 1px solid #d3d1cb; padding: 4px 10px; font-size: 12px; font-weight: 600; border-radius: 4px; text-decoration: none; margin-top: 10px; transition: all 0.2s ease; }
         .inline-script-btn:hover { background: #f7f6f3; color: #2383e2; border-color: #2383e2; text-decoration: none; }
         
+        /* Book Showcase Section Layout */
+        .book-showcase { display: grid; grid-template-columns: 180px 1fr; gap: 25px; background: #fafafa; border: 1px solid #edece9; border-radius: 8px; padding: 20px; margin-top: 15px; }
+        .book-cover { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 1px solid #d3d1cb; }
+        
+        @media (max-width: 600px) {
+            .book-showcase { grid-template-columns: 1fr; text-align: center; }
+            .book-cover { max-width: 160px; margin: 0 auto; }
+        }
+
         .hire-box { background: #f7f6f3; border: 1px solid #edece9; padding: 35px 20px; margin: 60px 0 20px 0; text-align: center; border-radius: 6px; }
         .hire-text { font-size: 1.15em; font-weight: 600; color: #191919; margin: 0 0 12px 0; }
         .hire-email { font-size: 1.1em; font-weight: 700; margin: 0; }
@@ -113,7 +123,7 @@
     <ul>
         <li><strong>Format:</strong> Cultural Commentary / Editorial Essay</li>
         <li><strong>Role:</strong> Solo Writer & Researcher</li>
-        <li><strong>Description:</strong> An analytical piece tracing the 19th-century roots of "mansplaining" back to the historical "Cult of Domesticity." It bridges the gap between historical institutional gatekeeping and modern-day manifestations like medical gaslighting.</li>
+        <li><strong>Description:</strong> An analytical piece tracing the 19th-century roots of "mansplaining" back to the historical "Cult of Domesticity". It bridges the gap between historical institutional gatekeeping and modern-day manifestations like medical gaslighting.</li>
     </ul>
     <details>
         <summary>▶ Read Full Essay</summary>
@@ -197,7 +207,7 @@
     </div>
 
     <h2 id="short-form-video">📹 Satire: Short-Form Video</h2>
-    <p style="color: #7a7a7a; font-style: italic; margin-bottom: 20px;">Four YouTube shorts showcasing end-to-end solo production, high-concept visual satire, and rapid comedic pacing.</p>
+    <p style="color: #7a7a7a; font-style: italic; margin-bottom: 20px;">Short-form video assets showcasing solo production, high-concept visual satire, and rapid comedic pacing.</p>
 
     <div class="video-grid">
         <div class="video-card">
@@ -249,12 +259,24 @@
     </ul>
 
     <h3>📚 Published Collection</h3>
-    <ul>
-        <li>
-            <strong>D.I.D I Die & Leave Me Living?</strong> — A compelling full-length collection navigating survival, identity, and existential fragmentation.
-            <div style="margin-top: 6px;"><a href="https://a.co/d/04jOsB0I" target="_blank">🛒 View or Purchase on Amazon Kindle</a></div>
-        </li>
-    </ul>
+    <!-- Premium Book Showcase Layout Block -->
+    <div class="book-showcase">
+        <div>
+            <!-- Image tag targeting the verbatim book cover asset file name -->
+            <img src="1000046066.jpg" alt="D.I.D I Die & Leave Me Living? Book Cover Artwork" class="book-cover">
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <strong style="font-size: 1.1em; color: #191919;">D.I.D I Die & Leave Me Living?</strong>
+            <p style="margin: 8px 0 16px 0; font-size: 14px; line-height: 1.5; color: #37352f;">
+                A compelling, raw, full-length poetry collection navigating complex themes of survival, identity fragmentation, and existential endurance.
+            </p>
+            <div>
+                <a href="https://a.co/d/04jOsB0I" target="_blank" style="display: inline-block; background: #2383e2; color: white; padding: 8px 16px; font-size: 13px; font-weight: 600; border-radius: 5px; text-decoration: none;">
+                    🛒 View on Amazon Kindle
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div class="hire-box">
         <p class="hire-text">Available for commissions, collaborations, and editorial work.</p>
@@ -262,4 +284,5 @@
     </div>
 
 </body>
-</html>
+    </html>
+            
