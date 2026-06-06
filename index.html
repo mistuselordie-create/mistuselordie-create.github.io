@@ -40,9 +40,15 @@
         summary { font-weight: 600; cursor: pointer; color: #2383e2; outline: none; }
         summary:hover { color: #1b62ab; }
         .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 15px; margin-top: 20px; }
-        .video-card { background: #fafafa; border: 1px solid #edece9; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; }
+        .video-card { background: #fafafa; border: 1px solid #edece9; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between; }
         .video-container { position: relative; width: 100%; aspect-ratio: 9 / 16; background: #000; border-radius: 4px; overflow: hidden; margin-bottom: 12px; }
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .script-btn { display: inline-block; text-align: center; background: #ffffff; color: #37352f; border: 1px solid #d3d1cb; padding: 6px 12px; font-size: 12px; font-weight: 600; border-radius: 4px; text-decoration: none; margin-top: 10px; transition: background 0.2s ease; }
+        .script-btn:hover { background: #f7f6f3; text-decoration: none; color: #2383e2; border-color: #2383e2; }
+        .inline-script-btn { display: inline-block; background: #ffffff; color: #37352f; border: 1px solid #d3d1cb; padding: 4px 10px; font-size: 12px; font-weight: 600; border-radius: 4px; text-decoration: none; margin-top: 8px; transition: background 0.2s ease; }
+        .inline-script-btn:hover { background: #f7f6f3; text-decoration: none; color: #2383e2; border-color: #2383e2; }
+        .hire-box { background: #f7f6f3; border-left: 4px solid #2383e2; padding: 20px; margin: 40px 0 20px 0; border-radius: 0 4px 4px 0; text-align: center; }
+        .hire-title { font-size: 1.5em; font-weight: 700; color: #191919; margin: 0 0 10px 0; }
     </style>
 </head>
 <body>
@@ -53,12 +59,9 @@
         <div class="toc-title">Table of Contents</div>
         <ul class="toc-list">
             <li><a href="#about">👤 About Me</a></li>
-            <li><a href="#critiques">🏛️ Cultural Critiques & Social Commentaries</a></li>
-            <li><a href="#fiction">📚 Fiction Deconstructions & Literary Analyses</a></li>
-            <li><a href="#satire">🎭 Speculative Satire & Subversive Prose</a></li>
-            <li><a href="#branding">⚡ High-Energy Brand Voice & Copywriting</a></li>
-            <li><a href="#videos">📹 Short-Form Satirical Video Production</a></li>
-            <li><a href="#poetry">📖 Published Poetry & Books</a></li>
+            <li><a href="#investigative-essays">🏛️ Investigative Essays & Analyses</a></li>
+            <li><a href="#subversive-prose-poetry">🎭 Subversive Prose, Poetry & Strategy</a></li>
+            <li><a href="#video-production">📹 Satirical Video Essays & Production</a></li>
         </ul>
     </div>
 
@@ -69,10 +72,10 @@
         <p><strong>Name:</strong> Mistus Elordie<br>
         <strong>Email:</strong> <a href="mailto:mistuselordie@gmail.com">mistuselordie@gmail.com</a><br>
         <strong>Channels:</strong> <a href="https://youtube.com/@thesofasentinelsgazette" target="_blank">YouTube</a> | <a href="https://medium.com/@the3fsjournal" target="_blank">Medium (Social Commentary)</a> | <a href="https://medium.com/@thesofasentinelsgazette" target="_blank">Medium (Satire)</a></p>
-        <p>Mistus Elordie is a writer, satirist, and essayist whose work spans constitutional analysis, gender biology, literary criticism, and institutional satire. Founding editor of The Sofa Sentinels Gazette and author of the poetry collection D.I.D I Die & Leave Me Living?, they use deep research and deadpan humor to dismantle the invisible systems that drive the discrimination of minorities in society.</p>
+        <p>Mistus Elordie is an advocacy writer, satirist, and multimedia researcher. Operating at the intersection of deep policy research and deadpan systemic critique, they utilize diverse mediums to dismantle the invisible systems that drive the discrimination of minorities in society.</p>
     </div>
 
-    <h2 id="critiques">🏛️ Cultural Critiques & Social Commentaries</h2>
+    <h2 id="investigative-essays">🏛️ Investigative Essays & Analyses</h2>
 
     <h3>1. The Anti-Human Laws of Nigeria's Same-Sex Marriage Prohibition Act</h3>
     <ul>
@@ -107,9 +110,7 @@
         <div style="padding: 10px 0;"><a href="https://docs.google.com/document/d/1MbYuMP4D4hTycqySaJYG7rHBmdAot62Vl-bls8eIsYY/edit?usp=drivesdk" target="_blank">👉 Click here to read the Script on Google Docs</a></div>
     </details>
 
-    <h2 id="fiction">📚 Fiction Deconstructions & Literary Analyses</h2>
-
-    <h3>1. A Character Study from Jessie Garcia's <em>The Business Trip</em>: Jasmine Veronica Littleton</h3>
+    <h3>4. A Character Study from Jessie Garcia's <em>The Business Trip</em>: Jasmine Veronica Littleton</h3>
     <ul>
         <li><strong>Format:</strong> Literary Critique / Character Analysis</li>
         <li><strong>Role:</strong> Solo Writer & Reviewer</li>
@@ -120,7 +121,7 @@
         <div style="padding: 10px 0;"><a href="https://docs.google.com/document/d/1AWZa1KNO5XiWFL45AeYC3L24ojHB0h6-/edit?usp=drivesdk&ouid=113680127295564973224&rtpof=true&sd=true" target="_blank">👉 Click here to read the Character Study on Google Docs</a></div>
     </details>
 
-    <h2 id="satire">🎭 Speculative Satire & Subversive Prose</h2>
+    <h2 id="subversive-prose-poetry">🎭 Subversive Prose, Poetry & Strategy</h2>
 
     <h3>1. Government to Confiscate 'Criminally Wealthy' Placental Nutrients in New Potentriot Act</h3>
     <ul>
@@ -152,17 +153,19 @@
     </ul>
     <details>
         <summary>▶ Read Jailhouse Letter</summary>
-        <div style="padding: 10px 0;"><a href="https://docs.google.com/document/d/1OJoA9FLQGEvjqwTvftw0oe_cltBC83aLrbPsT3uBhq0/edit?usp=drivesdk" target="_blank">👉 Click here to read the Jailhouse Letter on Google Docs</a></div>
+        <div style="padding: 10px 0;">
+            <a href="https://docs.google.com/document/d/1OJoA9FLQGEvjqwTvftw0oe_cltBC83aLrbPsT3uBhq0/edit?usp=drivesdk" target="_blank">👉 Click here to read the Jailhouse Letter on Google Docs</a>
+            <br>
+            <a href="https://docs.google.com/document/d/1irkYl7iuiIzv9Mtn2F-L_IzOOTigkXDNzw4sMtvx8bw/edit?usp=drivesdk" target="_blank" class="inline-script-btn">🎬 View Adapted Short Screenplay (Google Docs)</a>
+        </div>
     </details>
-
-    <h2 id="branding">⚡ High-Energy Brand Voice & Copywriting</h2>
 
     <div class="callout-box">
         <span class="callout-emoji">🕯️</span>
-        <h3>1. Project: Blah Blah Blah Candles</h3>
+        <h3>4. Project: Blah Blah Blah Candles</h3>
         <ul>
             <li><strong>Slogan:</strong> A Refreshing Spark of Victory — in every candlestick.</li>
-            <li><strong>Format:</strong> E-commerce Copywriting & Brand Strategy</li>
+            <li><strong>Format:</strong> Satirical Brand Copywriting & Strategy Plan</li>
             <li><strong>Role:</strong> Copywriter</li>
         </ul>
         <details>
@@ -171,40 +174,9 @@
         </details>
     </div>
 
-    <h2 id="videos">📹 Short-Form Satirical Video Production</h2>
-    <p>High-concept, rapidly-paced visual satire written, voiced, and edited entirely as a solo creator handles end-to-end production.</p>
-
-    <div class="video-grid">
-        <div class="video-card">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/R_ZURKsZSWo" allowfullscreen></iframe>
-            </div>
-            <strong style="font-size: 14px;">The Ultimate Alpha Move</strong>
-            <p style="font-size: 12px; margin: 4px 0 0 0; color: #7a7a7a; line-height: 1.4;">A short-form satirical comedy piece parodying modern internet subcultures and relationship dynamics through an ironic, high-energy monologue.</p>
-        </div>
-
-        <div class="video-card">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/PrGWLAZRBUE" allowfullscreen></iframe>
-            </div>
-            <strong style="font-size: 14px;">The Road to Hell is Paved with the Fear of God</strong>
-            <p style="font-size: 12px; margin: 4px 0 0 0; color: #7a7a7a; line-height: 1.4;">A dark humor stickman animation exploring philosophical and religious themes through satirical, existential humor.</p>
-        </div>
-
-        <div class="video-card">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/-OhFnEt-GYg" allowfullscreen></iframe>
-            </div>
-            <strong style="font-size: 14px;">The Government’s 3-Step Plan to Fix the Economy</strong>
-            <p style="font-size: 12px; margin: 4px 0 0 0; color: #7a7a7a; line-height: 1.4;">A political satire sketch comedy monologue parodying government population policies and financial planning logic.</p>
-        </div>
-    </div>
-
-    <h2 id="poetry">📖 Published Poetry & Books</h2>
-    
-    <h3>1. Ode to Misogyny</h3>
+    <h3>5. Ode to Misogyny</h3>
     <ul>
-        <li><strong>Format:</strong> Standalone Satirical Poem</li>
+        <li><strong>Format:</strong> Standalone Satirical / Advocacy Poem</li>
         <li><strong>Role:</strong> Author</li>
         <li><strong>Description:</strong> A sharp, rhythmic, deadpan piece confronting systemic misogyny and societal double standards.</li>
     </ul>
@@ -215,9 +187,9 @@
         </div>
     </details>
 
-    <h3>2. Addict's Anthem</h3>
+    <h3>6. Addict's Anthem</h3>
     <ul>
-        <li><strong>Format:</strong> Standalone Satirical Poem</li>
+        <li><strong>Format:</strong> Standalone Satirical / Advocacy Poem</li>
         <li><strong>Role:</strong> Author</li>
         <li><strong>Description:</strong> A raw, poignant piece exploring themes of dependence, survival, and the human condition.</li>
     </ul>
@@ -228,7 +200,7 @@
         </div>
     </details>
 
-    <h3>3. D.I.D I Die & Leave Me Living?</h3>
+    <h3>7. D.I.D I Die & Leave Me Living?</h3>
     <ul>
         <li><strong>Format:</strong> Full Poetry Collection</li>
         <li><strong>Role:</strong> Author</li>
@@ -241,6 +213,51 @@
         </div>
     </details>
 
+    <h2 id="video-production">📹 Satirical Video Essays & Production</h2>
+    <p>High-concept, rapidly-paced visual satire written, voiced, and edited entirely as a solo creator handles end-to-end production.</p>
+
+    <div class="video-grid">
+        <div class="video-card">
+            <div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/R_ZURKsZSWo" allowfullscreen></iframe>
+                </div>
+                <strong style="font-size: 14px;">The Ultimate Alpha Move</strong>
+                <p style="font-size: 12px; margin: 4px 0 0 0; color: #7a7a7a; line-height: 1.4;">A short-form satirical comedy piece parodying modern internet subcultures and relationship dynamics through an ironic, high-energy monologue.</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1-BqjxDi8bpFXorgYFHM1caPo4sEYKWCU7WBAVN8RVXE/edit?usp=sharing" target="_blank" class="script-btn">View A/V Production Script (Google Docs)</a>
+        </div>
+
+        <div class="video-card">
+            <div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PrGWLAZRBUE" allowfullscreen></iframe>
+                </div>
+                <strong style="font-size: 14px;">The Road to Hell is Paved with the Fear of God</strong>
+                <p style="font-size: 12px; margin: 4px 0 0 0; color: #7a7a7a; line-height: 1.4;">A dark humor stickman animation exploring philosophical and religious themes through satirical, existential humor.</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1MXMuBUcWsjEK2Iv3tw36utOjUbTqzAcVVIVU5wxXjpM/edit?usp=drivesdk" target="_blank" class="script-btn">View A/V Production Script (Google Docs)</a>
+        </div>
+
+        <div class="video-card">
+            <div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/-OhFnEt-GYg" allowfullscreen></iframe>
+                </div>
+                <strong style="font-size: 14px;">The Government’s 3-Step Plan to Fix the Economy</strong>
+                <p style="font-size: 12px; margin: 4px 0 0 0; color: #7a7a7a; line-height: 1.4;">A political satire sketch comedy monologue parodying government population policies and financial planning logic.</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1eD5VioD8LCfHcMc64Qm-GpOBMbEAbUbRTOFFNbbQ_CM/edit?usp=drivesdk" target="_blank" class="script-btn">View A/V Production Script (Google Docs)</a>
+        </div>
+    </div>
+
+    <!-- Hire Me Callout Box -->
+    <div class="hire-box">
+        <div class="hire-title">🚀 Hire Me</div>
+        <p style="margin: 0 0 10px 0;">Looking for deep systems research, sharp copywriting, or high-concept multi-media satire?</p>
+        <p style="margin: 0; font-weight: 600;">Let's collaborate: <a href="mailto:mistuselordie@gmail.com">mistuselordie@gmail.com</a></p>
+    </div>
+
 </body>
-    </html>
-                
+</html>
+
